@@ -1,0 +1,149 @@
+html{
+  scroll-behavior:smooth;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 50px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+
+  z-index:1000;
+}
+
+.logo{
+  font-size:30px;
+  letter-spacing:5px;
+}
+
+nav a{
+  text-decoration:none;
+  color:black;
+  margin-left:25px;
+  font-weight:bold;
+  transition:0.4s;
+  padding:8px 15px;
+  border-radius:20px;
+}
+
+nav a:hover{
+  background:rgba(255,255,255,0.5);
+}
+
+.hero{
+  height:100vh;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  url('https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1974&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.content h1{
+  font-size:70px;
+  color:white;
+}
+
+.content p{
+  margin-top:10px;
+  font-size:20px;
+  color:white;
+}
+
+.buttons{
+  margin-top:25px;
+}
+
+button{
+  padding:14px 35px;
+  border:none;
+  border-radius:30px;
+  margin:10px;
+  font-size:15px;
+  cursor:pointer;
+  font-weight:bold;
+
+  transition:0.4s;
+}
+
+button:hover{
+  transform:scale(1.08);
+}
+.dark{
+  background:black;
+  color:white;
+}
+.car-section{
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.model3{
+  background-image:url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=1974&auto=format&fit=crop');
+}
+
+.modelx{
+  background-image:url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1974&auto=format&fit=crop');
+}
+.modely{
+  background-image:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1883&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+}
+
+button:hover{
+  transform:scale(1.05);
+  transition:0.4s;
+}
+footer{
+  background:black;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+.content{
+  animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(50px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
